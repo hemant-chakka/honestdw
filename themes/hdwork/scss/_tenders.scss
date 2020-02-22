@@ -1,0 +1,64 @@
+.cls-TenderPage {
+	form {		
+		#inputParentID {
+			margin-bottom:.8rem;
+		}
+		
+
+		
+		#AdditionalInfoBtn {
+			&:disabled {
+				background-color: rgba(0,0,0,.4);
+    			border-color: black;
+    			color:#666;
+			}
+			.fa-question-circle {
+					right:-30px;
+				}
+			@media (max-width: 768px) {				
+				width:90%;
+				display:inline-block;				
+			}
+		}
+
+		#AdditionalInfo {
+			.form-group-bg {
+				.col-3.col-sm-1 {padding-top:12px;}
+				.fa-question-circle {top:12px;}
+			}
+		}
+	}
+}
+
+
+
+
+
+.tender-card {
+	margin-bottom:30px;
+	background-color:$trans-black;
+	padding: 1.25rem;
+	@include border-radius(12px);
+	img {
+		@include border-radius(12px);
+	}
+	.btn {
+		padding: 8px 16px;
+    	border-radius: 20px;
+    	font-size:14px;
+    	margin-top:12px;
+	}	
+	
+}
+
+@media (max-width: 61.9em) {
+	.tender-card {
+		padding:.9rem;
+		h3 {font-size:18px;font-weight:bold;}
+		.summary,.summary a {
+			font-size:14px;
+			color:$gray-400;
+		}
+
+	}
+}

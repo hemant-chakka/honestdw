@@ -1,0 +1,279 @@
+/*
+    Theme Name: Bell
+    Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+*/
+
+
+
+/* ==================================================
+  General
+  ================================================== */
+a {
+  transition: 0.5s;
+}
+
+
+
+/*  base typography */
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-primary;
+}
+
+p{
+  line-height: $line-height;
+  // color: #333;
+  font-size: 1.2rem;
+  font-family: $font-primary;
+}
+
+h1{
+  font-size: $font-size-x-large;
+}
+
+h2{
+  font-size: $font-size-large;
+  margin-bottom: 65px;
+  text-transform:uppercase;
+  text-align:center;
+  letter-spacing:3px;
+}
+
+h3{
+  font-size: $font-size-sm-medium;
+}
+
+h4{
+  font-size: $font-size-small;
+}
+
+/* ==================================================
+  Elements
+  ================================================== */
+
+.btn {
+    background-color: white;
+    font-family: $font-secondary;
+    font-weight: 400;
+    color: black;
+    padding: 15px 45px;
+    border-radius: 50px;
+    &:hover {
+        background-color: $color-secondary;
+        color: #fff;
+    }
+    &:focus {
+      // color: #fff;
+    }
+}
+
+.btn-ghost {
+    border: 3px solid #fff;
+    background-color: transparent;
+    &:hover {
+        background-color: #fff;
+        color: $color-primary;
+    }
+}
+section {
+    padding: 85px 0;
+}
+.card {
+    position: relative;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    overflow: hidden;
+}
+a:hover {
+    text-decoration: none !important;
+}
+.scrolltop {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: $color-primary;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    &:hover, &:active, &:focus {
+        color: #fff !important;
+        opacity: .75;
+    }
+}
+
+/* ==================================================
+  Hero Styling
+================================================== */
+
+.hero {
+    display: table;
+    position: relative;
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    padding: 150px 0;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    &:after {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, .65);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+.hero-brand {
+    margin-bottom: 75px;
+    display: inline-block;
+    &:hover {
+        opacity: .75;
+    }
+}
+
+.tagline {
+    font-family: $font-primary;
+    font-size: $font-size-medium;
+    margin: 45px 0 75px 0;
+    color: #fff;
+}
+
+
+
+/* ==================================================
+  Stats Styling
+================================================== */
+
+.stats-row {
+    margin-top: 65px;
+}
+.stats-col {
+    .circle {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        font-family: $font-primary;
+        font-weight: 500;
+        color: #666;
+        border: 6px solid $color-primary;
+        border-radius: 50%;
+        padding: 55px 25px 0 25px;
+        position: relative;
+        .stats-no {
+            color: #fff;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            top: -25px;
+            right: -15px;
+            font-family: $font-primary;
+            font-size: 18px;
+            background-color: $color-secondary;
+            position: absolute;
+            border-radius: 50%;
+            font-weight: 700;
+        }
+    }
+}
+/* ==================================================
+  Parallax Styling
+  ================================================== */
+
+.block {
+    color: #fff;
+    height: 490px;
+    overflow: hidden;
+    padding-top: 85px;
+    h2 {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    p {
+        color: #fff;
+        margin-bottom: 45px;
+    }
+}
+/* ==================================================
+  Features Styling
+  ================================================== */
+
+.features {
+    h2 {
+        color: $color-primary;
+    }
+    padding-bottom: 45px;
+}
+.feature-col {
+    display: table;
+    padding-bottom: 45px;
+    > div > div {
+        display: table-cell;
+        vertical-align: middle;
+        &:last-child {
+            padding-left: 20px;
+        }
+    }
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+        background: $color-primary;
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        line-height: 70px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    h3 {
+        color: $color-primary;
+    }
+    p {
+        font-family: $font-secondary;
+        font-size: 14px;
+        color: #999;
+    }
+}
+/* ==================================================
+  Call-to-action Styling
+  ================================================== */
+
+.cta {
+    background-color: $color-primary;
+    padding: 25px 0;
+    h2 {
+        margin-bottom: 5px;
+    }
+    h2,
+    p {
+        color: #fff;
+    }
+    p {
+        margin-bottom: 0;
+        opacity: .75;
+    }
+    .btn-ghost {
+        position: relative;
+        top: 13px;
+    }
+}
+

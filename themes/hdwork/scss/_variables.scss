@@ -1,0 +1,41 @@
+// -------------------------------------------------
+// Site Specific Variables
+// -------------------------------------------------
+
+// Example, group similar variables, only use variables for common colours & values
+// $all-lowercase: value;
+
+$font-primary: 'Nunito', Helvetica, Arial, sans-serif;
+$font-secondary: 'Roboto', Helvetica, Arial, sans-serif;
+$color-primary: #895E40;
+$color-secondary: #E04F00;
+
+
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+
+$placeholder: $gray-600;
+
+
+$font-size-x-large: 62px;
+$font-size-large: 30px;
+$font-size-medium: 26px;
+$font-size-sm-medium: 24px;
+$font-size-small: 18px;
+
+$line-height: 1.55;
+
+$trans-black: rgba(1,1,1,.7);
+$trans-primary: rgba($color-primary,.7);
+

@@ -1,0 +1,20 @@
+.cls-DashboardPage {
+	.dashboard-buttons {
+		.btn-primary {padding: 15px 65px;}
+	}
+	@media (max-width: 768px) {
+		
+		.dhw-logo {
+			
+		}
+		.dashboard-buttons {
+			.btn-primary {
+				width:100%;
+				display:block;
+				margin-bottom:20px;
+			}
+		}
+		
+	}
+
+}

@@ -1,0 +1,383 @@
+
+/** ----------------------------------------------------------
+ *
+ * Contains the main layout of the page and the individual styles.
+ * Acts as the main stylesheet for theme.
+ *
+ *		Include your notes or table of contents below....
+ *		Include color hex's or values of your grid
+ *
+ *		1. OOCSS GRID
+ *		2. MAIN LAYOUT
+ *		3. HEADER
+ *			- Brand
+ *			- Search Form
+ *		4. Navigation
+ *			- Primary Navigation
+ *			- tablet Navigation
+ *			- Secondary Navigation
+ *			- Secondary Nav 2-5 Levels deep
+ *		5. Mixed
+ *		6. Footer
+ *		7. Page Specific Layout
+ *			- Homepage
+ *			- Search Results
+ *		8. Device and Responsive Layout
+ *			- Breakpoint 960px
+ *			- Breakpoint 640px
+ *				- Search Form
+ *				- Main Content
+ *		9. Print Styles
+ *			- Simple Theme custom print styles
+ *
+ * @author Your Name <email@silverstripe.com>
+ * ------------------------------------------------------- */
+
+/* OOCSS Grid
+* https://github.com/stubbornella/oocss/wiki/grids
+*/
+
+/* section styles */
+
+body{
+	background-color: #000;
+    //background-color: #666;
+	color:#fff;
+    background-image: url(../images/cover2.jpg);
+  	/* background-size: cover; */
+  	background-repeat: round;	
+}
+
+a,a:hover,a:focus{
+	color:#fff;
+	outline:none;
+	text-decoration:none;
+}
+
+.btn-primary {
+    border-color: $color-primary;
+    background:transparent;
+    color:white;
+    &:hover {
+        background-color:$color-primary;
+        border-color: $color-primary;
+    }
+	
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.scrolltop {
+    background: #fff;
+    color: #000;
+}
+
+.scrolltop:hover, .scrolltop:active, .scrolltop:focus {
+    color: #000 !important;
+    opacity: .75;
+}
+
+.list-group li{
+	background-color:transparent;
+}
+
+
+.narrow-section{
+  padding:0px;
+}
+
+section h2{
+	font-family: $font-primary, Helvetica, Arial, sans-serif;
+    /* color: #199EB8;*/
+}
+
+.float-right{
+	float:right;
+}
+
+.float-left{
+	float:left;
+}
+
+/* Google Address */
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 100%;
+}
+
+#locationField
+{}
+
+#controls {
+	//position: relative;
+    //width: 480px;
+}
+/*
+#autocomplete {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 99%;
+} */
+.label {
+    text-align: right;
+    font-weight: bold;
+    width: 100px;
+    color: #303030;
+}
+#address {
+    border: 1px solid #000090;
+    background-color: #f0f0ff;
+    width: 480px;
+    padding-right: 2px;
+}
+#address td {
+    font-size: 10pt;
+}
+.field {
+    width: 99%;
+}
+.slimField {
+    width: 80px;
+}
+.wideField {
+    width: 200px;
+}
+#locationField {
+    //height: 20px;
+    //margin-bottom: 2px;
+}
+/* Custom Error/Success Messages */
+
+p.CustomMessage {
+    padding:10px;
+    margin: 10px 10px 0;
+    border: 1px solid #FFF;
+}
+ 
+p#SuccessMessage {
+    color:#3E933A;
+    background:#E2F7D8;
+    border-color:#9FDE9C;
+}
+ 
+p#NoticeMessage {
+    color:#CCBD00;
+    background:#FFF8D7;
+    border-color:#F1E988;
+}
+ 
+p#ErrorMessage {
+    color: #DA1D1D;
+    background: #FFDFDF;
+    border-color: #FFBBBB;
+}
+
+/* Angular css */
+input.ng-invalid {
+    background-color:pink;
+}
+
+input.ng-invalid:focus {
+    background-color:pink;
+}
+
+input.ng-valid {
+    background-color:lightgreen;
+}
+
+input.ng-valid:focus {
+    background-color:lightgreen;
+}
+
+
+
+select.ng-invalid {
+    background-color:pink;
+}
+
+select.ng-invalid:focus {
+    background-color:pink;
+}
+
+select.ng-valid {
+    background-color:lightgreen;
+}
+
+select.ng-valid:focus {
+    background-color:lightgreen;
+}
+
+
+textarea.ng-invalid {
+    background-color:pink;
+}
+
+textarea.ng-invalid:focus {
+    background-color:pink;
+}
+
+textarea.ng-valid {
+    background-color:lightgreen;
+}
+
+textarea.ng-valid:focus {
+    background-color:lightgreen;
+}
+
+/* User Dashboard */
+
+.hdw-jumbo .jumbotron{
+	background-color: transparent;
+}
+
+.dashboard-buttons .get-prices{
+	float:left;
+}
+
+.dashboard-buttons .find-work{
+	float:right;
+}
+
+#slider #distance{
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+#SearchTenders .fa-th{
+	
+	font-size: 40px;
+
+}
+/* View tender */
+
+#tender-map {
+     height: 400px;
+     width: 100%;
+}
+
+#supportingInfo .col-md-6, .supportingInfo .col-md-6{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#videosModal .col-md-6{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#memberList .modal-dialog,#questionsForm .modal-dialog{
+		max-width: 800px;
+}
+
+.answersForm .modal-dialog,.questionsForm .modal-dialog{
+		max-width: 800px !important;
+}
+
+.imagesModal .modal-dialog{
+		max-width: 100% !important;
+}
+
+.imagesModal .modal-header,.imagesModal .modal-footer{
+		border: none !important;
+}
+
+#detailsRequired{
+
+    overflow-y: scroll;
+
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f !important;
+    border-color: #d9534f !important;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c !important;
+    border-color: #5cb85c !important;
+}
+
+/* Payments option */
+
+#paymentModal .modal-header{
+	background-color: #004771;
+	color:#fff;
+}
+
+#paymentModal .modal-header button{
+	color:#fff;
+}
+
+/* Tootips */
+
+.tooltip .tooltip-inner{ 
+	max-width: 400px !important;
+	text-align:left;
+	
+}
+
+.tooltip .tooltip-inner{
+	background-color: #666666;
+}
+
+
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+    border-top-color: #666666;
+}
+
+/* User rating */
+
+.fa-star{
+	font-size: 30px;
+}
+
+.fa-star-gray{
+	color: #D3D3D3;
+}
+
+.fa-star-gold{
+	color: #FFD700;
+}
+
+/* User rating */
+
+.modal-content{
+	background-color: #000;
+}
+
+button.close,button.close:hover {
+    color: #fff;
+}
+
+/* Search Listing */
+
+.list-style{
+	
+}
+
+hr{
+    border: 1px solid;
+}
+
+/* Carousal */
+
+#carouselExampleIndicators2 .carousel-item .img-fluid {
+  width:100%;
+  height:100%;
+}
+
+.pac-container {
+    z-index: 100000;
+}

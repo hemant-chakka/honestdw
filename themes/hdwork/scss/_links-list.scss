@@ -1,0 +1,30 @@
+.links-list {
+	padding-top:0;
+
+	.links-list--item {
+		max-width:600px;
+		border-bottom:1px solid $trans-primary;
+		&.first {
+			border-top:1px solid $trans-primary;
+		}
+		a {
+			padding:.4rem 0;
+			display:block;
+			font-weight:900;
+			font-size:16px;
+			position:relative;
+			&:after {
+				content:"\f105";
+			    font-family: FontAwesome;
+			    font-weight:400;
+			    color: $color-primary;
+			    position: absolute; 
+			    right: 0; 
+			    top:50%;
+			    transform:translateY(-50%);
+			    z-index: 1;			    
+			    pointer-events: none;  
+			}
+		}
+	}
+}

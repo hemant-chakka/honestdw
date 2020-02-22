@@ -1,0 +1,33 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'hdwork'
+  
+Member:
+  extensions:
+    - MemberExtension
+    
+SiteConfig:
+  extensions:
+    - CustomSiteConfig
+    
+SmtpMailer:
+  host: email-smtp.us-east-1.amazonaws.com
+  user: AKIAIZ7TQ4CBCYQDQBZA
+  password: Ai5w+TzFm20CwzUZOniMWm9YVyJHBpqUgBMBdeqt4pLs
+  encryption: tls
+  charset: UTF-8
+  
+Email:
+  admin_email: admin@honestdayswork.nz
+  bcc_all_emails_to: admin@honestdayswork.nz
+  
+Security:
+  default_message_set: To continue please Login, or click on Register below to create a new account
